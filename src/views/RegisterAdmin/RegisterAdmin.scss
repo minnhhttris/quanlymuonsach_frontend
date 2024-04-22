@@ -1,0 +1,184 @@
+.containPage {
+  padding: 20px 30px;
+  height: 100vh;
+  background-image: url("../../assets/img/bookslibrarywallpapers.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.loginForm {
+  padding: 30px 30px;
+  background: linear-gradient(to left, #9ebad06b, #dde6ed6c);
+  margin-top: 40px;
+  border: none;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.logo {
+  margin-bottom: 1rem;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.titleWeb {
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  margin-left: 120px;
+  font-size: 40px;
+  transform: translateY(2px);
+  color: #27374D;
+  font-weight: bold;
+  margin-bottom: 2rem;
+
+}
+
+.desLogin {
+  font-weight: bold;
+  color: #e6e6e6;
+}
+
+.group {
+  display: grid;
+  grid-template-columns: 30px auto;
+  background-color: #526d82b0;
+  border-radius: 10px;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+.group label {
+  height: 100%;
+  position: relative;
+}
+
+.selectGroup {
+  background-color: transparent;
+  padding: 7px;
+  border: none;
+  outline: none;
+}
+
+.selectGroup option {
+  background-color: #526d82b0;
+}
+
+.iconForm {
+  display: flex;
+  padding: 5px 10px;
+  position: absolute;
+  transform: translateY(5px);
+}
+
+.group .iconForm {
+  display: flex;
+  padding: 5px 10px;
+  position: absolute;
+  transform: translateY(5px);
+}
+
+.group .groupInput {
+  border: none;
+  outline: none;
+  padding: 5px;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.group .groupInput::placeholder {
+  color: #ffffffad;
+}
+
+.group2 {
+  display: grid;
+  grid-template-columns: 30px auto 30px;
+  background-color: #526d82b0;
+  border-radius: 10px;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+.group2 .iconForm {
+  display: flex;
+  padding: 5px 10px;
+  position: absolute;
+  transform: translateY(5px);
+}
+
+.group2 .groupInput {
+  border: none;
+  outline: none;
+  padding: 5px;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.group2 .groupInput::placeholder {
+  color: #ffffffad;
+}
+
+.iconPassword {
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.btnPay {
+  background-image: linear-gradient(to right bottom, #27374dcf, #526d82d0);
+  margin: 10px 0px;
+  padding: 8px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 10px #27374D;
+  border-radius: 10px;
+  display: block;
+  font-size: 18px;
+  width: 100%;
+}
+
+.btnPay:hover {
+  background-position: right center;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #6e95efa1;
+}
+
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+
+  .book-img {
+    max-width: 100%;
+    max-height: 400px;
+    display: block;
+  }
+
+  div {
+    font-size: 34px;
+    color: #27374D;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-weight: bold;
+    color: #DDE6ED;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    padding: 0 20px;
+  }
+
+}
