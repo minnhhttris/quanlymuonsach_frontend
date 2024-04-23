@@ -16,7 +16,7 @@ import "vue3-toastify/dist/index.css";
   --dark: #1e293b;
   --dark-alt: #334155;
   --light: #DDE6ED;
-  --sidebar-width: 200px;
+  --sidebar-width: 260px;
 }
 * {
   margin: 0;

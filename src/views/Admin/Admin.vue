@@ -149,7 +149,7 @@
     </div>
   </div>
   <div v-else class="denied">
-    <h3 class="text-center mt-5">Vui lòng đăng nhập để xử dụng dịch vụ</h3>
+    <h3 class="text-center mt-5">Vui lòng đăng nhập để sử dụng dịch vụ</h3>
   </div>
 </template>
 
