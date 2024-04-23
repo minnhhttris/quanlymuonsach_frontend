@@ -1,0 +1,65 @@
+.containPage {
+  padding: 20px 30px;
+  height: 100vh;
+  background-image: url("../../assets/img/background_admin.jpg");
+  background-size: cover;
+  background-position: center;
+
+  .contentPage {
+    padding: 0px 20px 20px 20px;
+    border-radius: 10px;
+    background-color: #eae2e24a;
+  }
+
+
+
+}
+
+.action_group {
+  display: flex;
+  gap: 15px;
+}
+
+.btnAdd {
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: linear-gradient(to right bottom, #27374D, #526D82);
+  color: #fff;
+  box-shadow: 0px 5px 5px rgb(195, 183, 183);
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.rightModal {
+  .groupForm {
+    display: grid;
+    grid-template-columns: 94px auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #ffffff72;
+    color: #141a46;
+    margin: 10px;
+    border-bottom: 1px solid #000;
+
+    select {
+      border: none;
+    }
+
+    span {
+      margin: 5px 0px;
+    }
+
+    .inputGroup {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      padding: 0px 5px;
+    }
+
+    .inputGroup::placeholder {
+      color: rgba(64, 124, 180, 0.683);
+    }
+  }
+}

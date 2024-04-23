@@ -1,0 +1,109 @@
+.navbar {
+  background-image: url("../../assets/img/background_admin.jpg");
+  background-size: cover;
+  height: 70px; 
+  border-bottom: 2px solid rgba(0, 88, 196, 0.217); 
+  }
+  
+  .groupSearch {
+    background-color: #526d8258;
+    border-radius: 20px;
+  
+    .inputSearch {
+      padding: 7px 13px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      border-bottom-left-radius: 20px;
+      border-top-left-radius: 20px;
+    }
+  
+    .iconSearch {
+      color: var(--light);
+      padding: 10px 23px;
+      border-radius: 20px;
+    }
+  }
+  
+  .infoUser {
+    .btnLogin {
+      background-image: linear-gradient(
+        to right, 
+      );
+      padding: 10px 20px;
+      text-align: center;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      display: block;
+    }
+  
+    .btnLogin:hover {
+      background-position: right center;
+      /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
+  
+    .contentInfo {
+      .imageUser {
+        width: 50px;
+        border: 2px solid rgb(206, 206, 215);
+        border-radius: 50%;
+      }
+  
+      .nameUser {
+        font-weight: bold;
+        margin-right: 30px;
+      }
+  
+      .btnCart {
+        margin-right: 30px;
+        background-color: var(--purple);
+        padding: 5px 6px;
+        color: var(--light);
+        border-radius: 50%;
+        position: relative;
+      }
+    }
+  }
+  
+  @media (max-width: 780px) {
+    .groupSearch {
+      display: flex;
+      margin: 5px auto;
+    }
+  
+    .infoUser {
+      display: flex;
+      margin: auto;
+    }
+  }
+  
+  .userInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .userInfo .nameUser {
+    font-weight: bold;
+  }
+  
+  .userInfo .positionUser {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7); 
+  }
+  .imageColumn {
+    width: 50px; 
+    height: 50px;
+    overflow: hidden; 
+    border-radius: 50%; 
+  }
+  
+  .imageColumn img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+  }
