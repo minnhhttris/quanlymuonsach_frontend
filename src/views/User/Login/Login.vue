@@ -69,56 +69,56 @@
 </template>
 
 <script setup>
-import axios from "axios";
-import { ref } from "vue";
-import { toast } from "vue3-toastify";
-import { useRouter } from "vue-router";
+  import axios from "axios";
+  import { ref } from "vue";
+  import { toast } from "vue3-toastify";
+  import { useRouter } from "vue-router";
 
-const router = useRouter();
+  const router = useRouter();
 
-const phone = ref("");
-const password = ref("");
-const showPassword = ref(false);
+  const phone = ref("");
+  const password = ref("");
+  const showPassword = ref(false);
 
-const toggleShowPassword = () => {
-  showPassword.value = !showPassword.value;
-};
-const isLoggedIn = () => {
-  if (localStorage.getItem("isLoginDG") === "true") {
-    router.push("/");
-  }
-};
-isLoggedIn();
-
-const login = () => {
-  const formData = {
-    phone: phone.value,
-    password: password.value,
+  const toggleShowPassword = () => {
+    showPassword.value = !showPassword.value;
   };
-  axios
-    .post("http://localhost:3000/authentication/login", formData)
-    .then((res) => {
-      if (res.data.error) {
-        toast.error(res.data.error);
-      } else {
-        const ID_DocGia = res.data.data._id;
-        const Ten = res.data.data.Ten;
-        const Address = res.data.data.DiaChi;
-        const NgaySinh = res.data.data.NgaySinh;
-        const DienThoai = res.data.data.DienThoai;
-        const Avatar = res.data.data.Avatar;
-        const isLogin = true;
-        localStorage.setItem("ID_DG", ID_DocGia);
-        localStorage.setItem("TenDG", Ten);
-        localStorage.setItem("AvatarDG", Avatar);
-        localStorage.setItem("DiaChiDG", Address);
-        localStorage.setItem("NgaySinhDG", NgaySinh);
-        localStorage.setItem("DienThoaiDG", DienThoai);
-        localStorage.setItem("isLoginDG", isLogin);
-        router.push("/");
-      }
-    });
-};
+  const isLoggedIn = () => {
+    if (localStorage.getItem("isLoginDG") === "true") {
+      router.push("/");
+    }
+  };
+  isLoggedIn();
+
+  const login = () => {
+    const formData = {
+      phone: phone.value,
+      password: password.value,
+    };
+    axios
+      .post("http://localhost:3000/authentication/login", formData)
+      .then((res) => {
+        if (res.data.error) {
+          toast.error(res.data.error);
+        } else {
+          const ID_DocGia = res.data.data._id;
+          const Ten = res.data.data.Ten;
+          const Address = res.data.data.DiaChi;
+          const NgaySinh = res.data.data.NgaySinh;
+          const DienThoai = res.data.data.DienThoai;
+          const Avatar = res.data.data.Avatar;
+          const isLogin = true;
+          localStorage.setItem("ID_DG", ID_DocGia);
+          localStorage.setItem("TenDG", Ten);
+          localStorage.setItem("AvatarDG", Avatar);
+          localStorage.setItem("DiaChiDG", Address);
+          localStorage.setItem("NgaySinhDG", NgaySinh);
+          localStorage.setItem("DienThoaiDG", DienThoai);
+          localStorage.setItem("isLoginDG", isLogin);
+          router.push("/");
+        }
+      });
+  };
 </script>
 
 <style lang="scss" scoped>

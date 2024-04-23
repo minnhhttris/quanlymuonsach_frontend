@@ -13,7 +13,7 @@ aside {
   }
 
   .logo {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     img {
       width: 30px;
@@ -52,7 +52,20 @@ aside {
   }
 
   .text {
-    color: white !important;
+    color: white ;
+  }
+
+  &.router-link-exact-active {
+    background-color: #9db2bf48;
+    border-right: 5px solid #27374D;
+    .material-icons {
+      color: white;
+    }
+
+    .text {
+      color: white;
+      font-weight: bold;
+    }
   }
 
   .material-icons {

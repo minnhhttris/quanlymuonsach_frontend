@@ -35,7 +35,7 @@
         
         <router-link v-else to="/admin/login" class="button">
           <span class="material-icons"><i class="fa-solid fa-user"></i></span>
-          <span class="text">Tôi</span>
+          <span class="text">Đăng nhập</span>
         </router-link>
       </div>
       <div class="flex"></div>
